@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.avatar {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.avatar > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.avatar > span {
+    display: inline-block;
+    height: 102%;
+    width: 102%;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background-size: cover;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -1;
+}
